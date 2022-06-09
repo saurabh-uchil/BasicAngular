@@ -1,0 +1,23 @@
+form{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+input{
+    margin: 10px;
+}
+
+.bold{
+    color: brown;
+    font-weight: bold;
+}
+
+.class1{
+    color: green;
+}
+.class2{
+    font-style: italic;
+}
+.class3{
+    font-weight: bold;
+}

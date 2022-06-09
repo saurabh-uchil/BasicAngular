@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<table>
+    <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+    </tr>
+        
+   
+    <tbody>
+        <tr>
+            <td>Saurabh</td>
+            <td>Uchil</td>
+        </tr>
+        <tr>
+            <td>Purvik</td>
+            <td>Gohil</td>
+        </tr>
+        <tr>
+            <td>Pratik</td>
+            <td>Gohil</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<input [(ngModel)]="value">
+<p *ngIf="value.length==0; else elseBlock">You entered: Nothing</p>
+<ng-template #elseBlock>
+    <p>{{value}}</p>
+</ng-template>
+

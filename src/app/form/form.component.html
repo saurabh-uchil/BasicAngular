@@ -1,0 +1,17 @@
+<p>form works!</p>
+<form action="">
+    <div>
+    <label for="username">username</label>
+    <input type="text" username="username" id="username">
+    <br>
+    <label for="password">password</label>
+    <input type="password" password="password" id="name">
+    <button [disabled]='isHidden'>Submit</button>
+    <p [class]='styleClass'>Created by {{name.toUpperCase()}}</p>
+    <p [ngClass]="addClass()">{{greet()}}</p>
+    </div>
+    <div>
+        <p [style.color]="'red'">This is a new div</p>
+        <p [ngStyle]="myStyle">Heyloooooo!!</p>
+    </div>
+</form>

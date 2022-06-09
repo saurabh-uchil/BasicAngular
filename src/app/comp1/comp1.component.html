@@ -1,0 +1,24 @@
+<h3>General Service</h3>
+<div *ngFor="let emp of employee">
+    <div class="emp">
+    <p>Emp Id: {{emp.eid}}</p>
+    <p>Name: {{emp.ename}}</p>
+    <p>Dept: {{emp.dept}}</p>
+    </div>
+</div>
+
+<h3>HTTP service</h3>
+<div *ngIf="errorMsg.length !=0">{{errorMsg}}</div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </table>
+    

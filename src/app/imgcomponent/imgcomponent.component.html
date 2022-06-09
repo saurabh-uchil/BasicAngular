@@ -1,0 +1,35 @@
+<div>
+<p [ngClass]="addClass()">imgcomponent works!</p>
+<input #myInput type="text">
+<br>
+<button (click)="onClick(myInput)">Submit</button>
+<br>
+<input type='text' [(ngModel)]="myinput">
+
+
+<p>{{greetings}}</p>
+
+<p>{{myinput}}</p>
+</div>
+<p *ngIf="isTrue;then thenBlock else elseBlock">Show Data</p>
+
+<ng-template #thenBlock>
+    <p>Show Data</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>Data is Hidden</p>
+</ng-template>
+
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">You choose red</p>
+    <p *ngSwitchCase="'green'">You choose green</p>
+    <p *ngSwitchCase="'blue'">You choose blue</p>
+    <p *ngSwitchDefault>Choose again</p>
+</div>
+
+<div *ngFor="let player of players; trackBy:trackByIndex; index as i;" >
+    <p>{{i}} : {{player.pname}}</p>
+</div>
+    <p *ngIf="players.length==0">No players to display</p>
+<button (click)="addData()">Add Player</button>

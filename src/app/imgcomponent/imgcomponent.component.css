@@ -1,0 +1,20 @@
+div{
+    border: 2px solid black;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.isbold{
+    font-weight: bold;
+    color: red;
+    margin: 10px;
+}
+.isItalic{
+    font-style: italic;
+}
+input, p{
+    margin: 10px;
+}
+button{
+    margin: 10px;
+}
